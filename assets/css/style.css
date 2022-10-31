@@ -1,0 +1,168 @@
+.main{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Oleo+Script+Swash+Caps&display=swap');
+/* font-family: 'Oleo Script Swash Caps', cursive; */
+body{ 
+    font-family: 'Montserrat', sans-serif;
+}
+
+.img-1 {
+    height: 100%;
+    width: 100%;
+}
+
+.img-2 {
+    height: 100%;
+    width: 100%;
+}
+
+.img-3 {
+    height: 100%;
+    width: 100%;
+}
+
+.img-4 {
+    height: 100%;
+    width: 100%;
+}
+
+.img-5 {
+    height: 100%;
+    width: 100%;
+}
+
+.img-6 {
+    height: 100%;
+    width: 100%;
+}
+
+food-area {
+    background-color: #f4f4f4;
+    padding: 100px 0;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.title  {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.title p{
+    font-family: 'Oleo Script Swash Caps' ;
+}
+
+.title h4 {
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-top: 5px;
+}
+
+.foods {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.single-food {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    flex-basis: 31%;
+}
+
+.single-food:hover .food-img h4 {
+    top: 0;
+}
+
+.single-food:hover img {
+    transform: scale(1.1) rotate(3deg);
+}
+
+.food-img {
+    position: relative;
+    height: 220px;
+    overflow: hidden;
+}
+
+.food-img img {
+    border-radius: 12px 12px 0 0;
+}
+
+.food-img h4 {
+    position: absolute;
+    left: 0px;
+    top: -75px;
+    background-color: #ff7720;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-size: 22px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+u1.food-list {
+    padding: 20px;
+    list-style: none;
+}
+
+u2.food-list {
+    font-weight: 400;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed#ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+u1.food-list li:last-child {
+    border-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-weight: 600;
+}
+
+.single-food a {
+    text-decoration: navajowhite;
+    background-color: #ff7720;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: block;
+    padding: 10px 20px;
+    width: 160px;
+    margin: 20px auto 25px auto;
+    border-radius: 9px;
+    transition: .3s;
+}
+
+.single-food a:hover {
+    background-color: orange;
+}
+
+@media only screen and (min-width:992px) and (max-width:1170px){
+    .container{
+        width: 970px;
+    }
+}
+
+@media only screen and (min-width:767px) and (max-width:991px){
+    .container{
+        width: 970px;
+    }
+    .single-food{
+        flex-basis: 49%;
+
+    }
+}
